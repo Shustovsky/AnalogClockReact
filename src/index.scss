@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //outline: 1px solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.circle {
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    border: 1px dashed;
+    margin: 5vh auto;
+    border-radius: 100%;
+
+}
+
+.secondHand {
+    position: absolute;
+    top: 50%;
+    width: 99%;
+    height: 2px;
+    background: linear-gradient(to left, red 50%, transparent 50%);
+    z-index: 3;
+}
+
+.minuteHand {
+    position: absolute;
+    top: 50%;
+    width: 99%;
+    height: 4px;
+    background: linear-gradient(to left, black 50%, transparent 50%);
+    z-index: 2;
+
+}
+
+.hourHand {
+    position: absolute;
+    top: 50%;
+    width: 99%;
+    height: 8px;
+    background: linear-gradient(to left, black 50%, transparent 50%);
+    z-index: 1;
+}
